@@ -89,7 +89,7 @@ function App() {
 
             <div className='input flex justify-center items-center gap-1.5 mb-4 mt-9'>
               <input onChange={handleinput} value={todo} type="text" className='todoinput border-2 rounded-lg border-gray-600 w-1/2 font-kodemono' ref={create} />
-              <img onClick={handleadd} src={Add} alt="" className=' h-8 w-8 cursor-pointer' />
+              <img onClick={handleadd} src={Add} alt="" className=' h-9 w-9 cursor-pointer' />
             </div>
 
             {todos.length != 0 && <button onClick={toggleFinished} className=' border-2 p-1 rounded-xl m-3 px-3 bg-[#3B5998] text-[#FFFFFF] hover:bg-[#517BBE] cursor-pointer font-patuaone'>View {showfinished ? ' Completed' : 'Incomplete'}</button>}
